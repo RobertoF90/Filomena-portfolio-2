@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Abril Fatface";
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem 4rem;
+}
+
+.nav__name {
+  font-size: 3rem;
+
+  color: rgb(204, 14, 14);
+}
+
+.nav__links {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  font-size: 2rem;
+  color: #666;
+
+  text-transform: uppercase;
+}
+
+header::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(228, 99, 99);
+  z-index: -1;
+
+  border-top-right-radius: 25%;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero--text-box {
+  padding: 15rem;
+}
+
+.hero--name {
+  font-size: 2rem;
+  color: #333;
+}
+
+.hero--heading {
+  padding-top: 0.8rem;
+  padding-bottom: 2.4rem;
+  font-size: 4.2rem;
+  line-height: 1;
+}
+
+.hero--paragraph {
+  color: #444;
+}
+
+.hero--btns {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 0;
+  width: 100%;
+  border: none;
+  border-radius: 24px;
+
+  text-transform: uppercase;
+}
+
+.btn--cta {
+  color: #fff;
+  background-color: rgb(204, 14, 14);
+}
+
+.btn--secondary {
+  color: rgb(204, 14, 14);
+  border: 1px solid rgb(204, 14, 14);
+  background-color: transparent;
+}
