@@ -146,7 +146,7 @@ body::before {
   line-height: 1;
 }
 
-.hero--paragraph {
+.paragraph {
   color: #444;
   line-height: 1.5;
 }
@@ -176,4 +176,139 @@ body::before {
   color: rgb(204, 14, 14);
   border: 1px solid rgb(204, 14, 14);
   background-color: transparent;
+}
+
+/* SECTION SERVICES */
+
+.section {
+  padding: 8rem 12rem;
+}
+
+.section__services {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.section__services::after {
+  content: "";
+  width: 25%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: -18%;
+  background-color: rgb(228, 99, 99);
+
+  z-index: -1;
+
+  border-top-right-radius: 25%;
+}
+
+.section__services > .paragraph {
+  text-align: center;
+  padding: 0 8rem;
+}
+
+.container__services {
+  padding: 6rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__services--service {
+  width: 30%;
+}
+
+.service--paragraph {
+  margin: 2rem 0;
+  padding: 0 2rem;
+
+  border-left: 4px solid rgb(228, 99, 99);
+}
+
+.service--link {
+  text-decoration: none;
+  color: rgb(228, 99, 99);
+}
+
+/* SECTION WHY */
+
+.section__why {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.container__why {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.why__list {
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.why__list--item::marker {
+  color: rgb(228, 99, 99);
+  font-size: 2rem;
+}
+
+.why__links {
+  display: flex;
+  justify-content: space-around;
+
+  list-style: none;
+}
+
+.why__links--item {
+  display: block;
+  font-family: "Abril Fatface";
+
+  text-decoration: none;
+  font-size: 2rem;
+  color: #666;
+
+  padding-bottom: 4rem;
+}
+
+.container__why .btn--cta {
+  width: fit-content;
+
+  background-color: rgb(228, 99, 99);
+
+  padding: 1.5rem 4rem;
+  font-size: 1.4rem;
+}
+
+.section__why::before {
+  content: "";
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  background-color: rgb(228, 99, 99);
+  z-index: -1;
+
+  border-top-left-radius: 25%;
+}
+
+.section__why--img-box::before {
+  content: "";
+  width: 8%;
+  height: 17%;
+  position: absolute;
+  top: 80%;
+  left: 56%;
+  background-color: rgb(198, 25, 25);
+  z-index: -1;
+
+  border-bottom-right-radius: 25%;
 }
