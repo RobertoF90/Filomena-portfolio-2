@@ -1,3 +1,8 @@
+:root {
+  --primary: #cc0e0e;
+  --secondary: #e46363;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,12 +49,12 @@ section {
 
 .btn--cta {
   color: #fff;
-  background-color: rgb(204, 14, 14);
+  background-color: var(--primary);
 }
 
 .btn--secondary {
-  color: rgb(204, 14, 14);
-  border: 1px solid rgb(204, 14, 14);
+  color: var(--primary);
+  border: 1px solid var(--primary);
   background-color: transparent;
 }
 
@@ -65,7 +70,7 @@ section {
 .nav__name {
   font-size: 4.2rem;
 
-  color: rgb(204, 14, 14);
+  color: var(--primary);
 }
 
 .nav__links {
@@ -82,7 +87,7 @@ section {
 }
 
 .nav__links--btn {
-  background-color: rgb(204, 14, 14);
+  background-color: var(--primary);
   padding: 1rem;
 }
 
@@ -103,7 +108,7 @@ body::before {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(228, 99, 99);
+  background-color: #e46363;
   z-index: -1;
 
   border-top-right-radius: 25%;
@@ -140,7 +145,7 @@ body::before {
   position: absolute;
   top: 40%;
   left: 93.5%;
-  background-color: rgb(228, 99, 99);
+  background-color: var(--secondary);
 
   z-index: -1;
 
@@ -201,7 +206,7 @@ body::before {
   position: absolute;
   top: 50%;
   left: -18%;
-  background-color: rgb(228, 99, 99);
+  background-color: var(--secondary);
 
   z-index: -1;
 
@@ -227,12 +232,12 @@ body::before {
   margin: 2rem 0;
   padding: 0 2rem;
 
-  border-left: 4px solid rgb(228, 99, 99);
+  border-left: 4px solid var(--secondary);
 }
 
 .service--link {
   text-decoration: none;
-  color: rgb(228, 99, 99);
+  color: var(--secondary);
 }
 
 /* SECTION WHY */
@@ -256,7 +261,7 @@ body::before {
 }
 
 .why__list--item::marker {
-  color: rgb(228, 99, 99);
+  color: var(--secondary);
   font-size: 2rem;
 }
 
@@ -308,7 +313,7 @@ body::before {
   position: absolute;
   top: 80%;
   left: 56%;
-  background-color: rgb(228, 99, 99);
+  background-color: var(--secondary);
 
   z-index: -1;
 
@@ -325,8 +330,6 @@ body::before {
 
 .portfolio__top button {
   width: fit-content;
-
-  background-color: rgb(228, 99, 99);
 
   padding: 1rem 4rem;
   font-size: 1.4rem;
@@ -417,7 +420,7 @@ body::before {
   position: absolute;
   top: 37%;
   left: 30%;
-  background-color: rgb(228, 99, 99);
+  background-color: var(--secondary);
   z-index: 1;
 
   border-bottom-right-radius: 25%;
@@ -445,7 +448,7 @@ body::before {
   padding: 1rem 4rem;
 
   background-color: #fff;
-  color: rgb(228, 99, 99);
+  color: var(--secondary);
 
   font-size: 1.4rem;
 }
@@ -508,7 +511,7 @@ body::before {
   position: absolute;
   top: 0%;
   left: -20%;
-  background-color: rgb(228, 99, 99);
+  background-color: var(--secondary);
 
   z-index: -1;
 
@@ -522,7 +525,7 @@ body::before {
   position: absolute;
   top: 20%;
   right: -20%;
-  background-color: rgb(228, 99, 99);
+  background-color: var(--secondary);
 
   z-index: -1;
 
@@ -571,7 +574,7 @@ body::before {
 }
 
 .connect__gallery--element {
-  background-color: rgb(228, 99, 99);
+  background-color: var(--secondary);
   padding: 2rem;
   padding-right: 4rem;
   display: flex;
@@ -618,7 +621,7 @@ body::before {
 /* FOOTER */
 
 .footer {
-  background-color: rgb(228, 99, 99);
+  background-color: var(--secondary);
 
   display: flex;
   flex-direction: column;
@@ -628,7 +631,7 @@ body::before {
 }
 
 .footer h1 {
-  color: rgb(204, 14, 14);
+  color: var(--primary);
 }
 
 .footer p {
@@ -647,7 +650,7 @@ body::before {
   width: 4rem;
   height: 4rem;
 
-  background-color: rgb(204, 14, 14);
+  background-color: var(--primary);
 
   border-radius: 12px;
 }
@@ -669,7 +672,7 @@ body::before {
 .copyright {
   padding: 3rem 0;
   text-align: center;
-  background-color: rgb(204, 14, 14);
+  background-color: var(--primary);
 
   color: #fff;
 }
