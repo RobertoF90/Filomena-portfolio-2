@@ -1,6 +1,6 @@
 :root {
-  --primary: #cc0e0e;
-  --secondary: #e46363;
+  --primary: #6100a6;
+  --secondary: #dbb9f4;
 }
 
 * {
@@ -103,7 +103,7 @@ header::before {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #e46363;
+  background-color: var(--secondary);
   z-index: -1;
 
   border-top-right-radius: 25%;
@@ -340,7 +340,7 @@ header::before {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: rgb(198, 25, 25);
+  background-color: var(--primary);
 
   z-index: -1;
 
@@ -596,7 +596,7 @@ header::before {
 .connect-top__text-box button {
   width: fit-content;
 
-  background-color: rgb(198, 25, 25);
+  background-color: var(--primary);
 
   margin-top: 3rem;
 
@@ -649,7 +649,7 @@ header::before {
   position: absolute;
   bottom: 0%;
   right: 0%;
-  background-color: rgb(198, 25, 25);
+  background-color: var(--primary);
 
   z-index: 1;
 
@@ -658,7 +658,7 @@ header::before {
 
 .connect__gallery--element h2 {
   font-size: 2rem;
-  color: rgb(198, 25, 25);
+  color: var(--primary);
 }
 
 .connect__gallery--element p {
