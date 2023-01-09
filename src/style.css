@@ -1,6 +1,9 @@
 :root {
   --primary: #6100a6;
   --secondary: #dbb9f4;
+
+  --link-primary: #333;
+  --link-secondary: #666;
 }
 
 * {
@@ -15,7 +18,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Roboto";
+  font-family: "League Spartan";
 }
 
 h1,
@@ -23,7 +26,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Abril Fatface";
+  font-family: "Lora";
   letter-spacing: 1px;
 }
 
@@ -44,16 +47,15 @@ h5 {
 
 .paragraph {
   color: #444;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 .paragraph--main {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .btn {
-  padding: 0.8rem 0;
-  width: 100%;
+  padding: 1rem 4rem;
   border: none;
   border-radius: 24px;
 
@@ -114,6 +116,7 @@ header::before {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding: 0 2rem;
 
@@ -134,14 +137,24 @@ header::before {
   gap: 3rem;
 
   font-size: 2rem;
-  color: #666;
+  color: var(--link-secondary);
 
   text-transform: uppercase;
+
+  transition: all 0.2s;
+}
+
+.nav__links--link:hover {
+  cursor: pointer;
+
+  color: var(--primary);
 }
 
 .nav__links--btn {
   background-color: var(--primary);
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+
+  border-radius: 12px;
 }
 
 /* HERO */
@@ -267,7 +280,7 @@ header::before {
 
 .service--link {
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 /* SECTION WHY */
@@ -290,10 +303,11 @@ header::before {
 .why__list {
   padding: 2rem;
   line-height: 1.5;
+  font-size: 1.8rem;
 }
 
 .why__list--item::marker {
-  color: var(--secondary);
+  color: var(--primary);
   font-size: 2rem;
 }
 
@@ -310,7 +324,7 @@ header::before {
 
   text-decoration: none;
   font-size: 2rem;
-  color: #666;
+  color: var(--link-secondary);
 
   padding-bottom: 4rem;
 }
@@ -710,6 +724,23 @@ header::before {
   background-color: var(--primary);
 
   border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s;
+}
+
+.container__social--element i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.container__social--element:hover {
+  cursor: pointer;
+
+  background-color: #000;
 }
 
 .footer__links {
