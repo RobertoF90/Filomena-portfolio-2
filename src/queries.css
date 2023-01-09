@@ -1,6 +1,6 @@
 @media (max-width: 500px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
 
   header {
@@ -32,7 +32,14 @@
     width: 10rem;
     height: 10rem;
     top: calc(50vh - 10.5rem);
-    left: calc(60vw - 2.5rem);
+    left: calc(50vw);
+  }
+
+  .hero--text-box {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
   }
 
   .hero::after {
@@ -136,5 +143,10 @@
 
   .testimonial__cta-box {
     width: 100%;
+  }
+
+  .footer__links {
+    padding: 0rem;
+    gap: 1rem;
   }
 }
