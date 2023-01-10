@@ -32,16 +32,18 @@
       <nav class="nav">
         <h1 class="nav__name">Filomena</h1>
         <ul class="nav__links">
-          <li class="nav__links--link">Servizi</li>
+          <li class="nav__links--link">
+            <a class="nav__links--link" href="servizi.html"> Servizi </a>
+          </li>
           <li>
             <a class="nav__links--link" href="portfolio.html"> Portfolio </a>
           </li>
           <li class="nav__links--link">
             <a class="nav__links--link" href="contatti.html"> Contatti </a>
           </li>
-          <button class="nav__links--btn btn btn--cta">
+          <!-- <button class="nav__links--btn btn btn--cta">
             <i class="fa-solid fa-bars"></i>
-          </button>
+          </button> -->
         </ul>
         <!-- <button class="nav__links--btn btn btn--cta">
           <i class="fa-solid fa-bars"></i>
@@ -65,8 +67,12 @@
           </p>
 
           <div class="hero--btns">
-            <button class="btn btn--cta">CTA</button>
-            <button class="btn btn--secondary">Portfolio</button>
+            <a class="link link--clean" href="contatti.html">
+              <button class="btn btn--cta">CONTATTAMI</button>
+            </a>
+            <a class="link link--clean" href="portfolio.html">
+              <button class="btn btn--secondary">Portfolio</button>
+            </a>
           </div>
         </div>
       </div>
@@ -138,8 +144,9 @@
           <li><a class="why__links--item" href="#">Lorem Ipsum</a></li>
           <li><a class="why__links--item" href="#">Lorem Ipsum</a></li>
         </ul>
-
-        <button class="btn btn--cta">Scopri i miei servizi</button>
+        <a class="nav__links--link" href="servizi.html">
+          <button class="btn btn--cta">Scopri i miei servizi</button>
+        </a>
       </div>
       <div class="section__why--img-box">
         <img src="./src/img/filomena-2.png" alt="image" />
@@ -149,7 +156,9 @@
     <section class="section section__portfolio">
       <div class="portfolio__top">
         <h1 class="heading--primary">Portfolio</h1>
-        <button class="btn btn--cta">Dai un'occhiata!</button>
+        <a class="link link--clean" href="portfolio.html">
+          <button class="btn btn--cta">Dai un'occhiata!</button>
+        </a>
       </div>
 
       <p class="paragraph paragraph--main">
@@ -206,19 +215,22 @@
           <img src="./src/img/filomena-3.png" alt="" />
         </div>
         <div class="testimonial__cta-box">
-          <h1 class="heading--primary">Testimonials</h1>
+          <h1 class="heading--primary">Chi sono</h1>
           <p class="paragraph paragraph--main">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
             aspernatur exercitationem quam similique ipsam illo laboriosam
           </p>
-          <button class="btn btn--secondary btn--testimonial">
-            Lorem Ipsum
-          </button>
+
+          <a class="link link--clean" href="contatti.html">
+            <button class="btn btn--secondary btn--testimonial">
+              CONTATTAMI
+            </button>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section section__blog">
+    <!-- <section class="section section__blog">
       <h1 class="heading--primary">Tips and Techniques</h1>
 
       <div class="container__blog">
@@ -261,15 +273,15 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="section section__connect">
-      <div class="connect--top">
-        <div class="connect-top__img-box">
+    <section class="section section__partners">
+      <!-- <div class="partners--top">
+        <div class="partners-top__img-box">
           <img src="./src/img/O6CBN70.png" alt="" />
         </div>
-        <div class="connect-top__text-box">
-          <h1 class="heading--primary">Connect with me</h1>
+        <div class="partners-top__text-box">
+          <h1 class="heading--primary">partners with me</h1>
           <p class="paragraph">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
             esse perspiciatis? Exercitationem asperiores quis eos harum? Dolorum
@@ -279,15 +291,15 @@
 
           <button class="btn btn--cta">Lorem Ipsum</button>
         </div>
-      </div>
+      </div> -->
 
-      <div class="connect--bottom">
-        <h1 class="heading--primary">Connect with me</h1>
-        <div class="connect__gallery">
-          <div class="connect__gallery--img">
+      <div class="partners--bottom">
+        <h1 class="heading--primary">Partners</h1>
+        <div class="partners__gallery">
+          <div class="partners__gallery--img">
             <img src="./src/img/portfolio-1.jpg" alt="" />
           </div>
-          <div class="connect__gallery--element">
+          <div class="partners__gallery--element">
             <h2>Filomena</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -296,11 +308,11 @@
             </p>
           </div>
 
-          <div class="connect__gallery--img">
+          <div class="partners__gallery--img">
             <img src="./src/img/portfolio-2.jpg" alt="" />
           </div>
 
-          <div class="connect__gallery--element">
+          <div class="partners__gallery--element">
             <h2>Filomena</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -309,7 +321,7 @@
             </p>
           </div>
 
-          <div class="connect__gallery--img">
+          <div class="partners__gallery--img">
             <img src="./src/img/portfolio-3.jpg" alt="" />
           </div>
         </div>
@@ -325,15 +337,33 @@
       </p>
 
       <div class="container__social">
-        <div class="container__social--element">
-          <i class="fa-brands fa-facebook-f"></i>
-        </div>
-        <div class="container__social--element">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-        <div class="container__social--element">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </div>
+        <a
+          class="link"
+          href="https://www.facebook.com/FilomenaLok1"
+          target="_blank"
+        >
+          <div class="container__social--element">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </a>
+        <a
+          class="link"
+          href="https://www.instagram.com/filomenalok/"
+          target="_blank"
+        >
+          <div class="container__social--element">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </a>
+        <a
+          class="link"
+          href="https://www.linkedin.com/in/filomena-locantore-63087216b/"
+          target="_blank"
+        >
+          <div class="container__social--element">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </a>
       </div>
 
       <ul class="footer__links">
