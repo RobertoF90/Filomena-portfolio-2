@@ -937,6 +937,10 @@ header::before {
   z-index: -1;
 }
 
+.servizi--strategia {
+  text-align: center;
+}
+
 .card--container {
   display: flex;
   width: 100%;
@@ -962,7 +966,7 @@ header::before {
   border-top-right-radius: 24px;
 }
 
-.card--container:nth-child(2):before {
+/* .card--container:nth-child(2):before {
   content: "";
   width: 5%;
   height: 50%;
@@ -974,7 +978,7 @@ header::before {
   z-index: 1;
 
   border-top-right-radius: 24px;
-}
+} */
 
 .card--container::after {
   content: "";
