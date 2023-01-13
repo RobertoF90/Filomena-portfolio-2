@@ -667,6 +667,8 @@ header::before {
   align-items: center;
   justify-content: center;
   padding: 4rem 0;
+
+  gap: 1rem;
 }
 
 .partners__gallery--element {
