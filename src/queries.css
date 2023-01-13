@@ -13,8 +13,38 @@
     height: 50vh;
   }
 
+  .mobile {
+    display: block;
+  }
+
   .nav {
     height: 5vh;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__links.active {
+    position: absolute;
+
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--secondary);
+
+    border: 1px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+
+    z-index: 100;
+  }
+
+  .nav__links a {
+    color: #000;
+    font-size: 3rem;
   }
 
   .hero {
@@ -39,8 +69,20 @@
     flex: 50%;
     display: flex;
     flex-direction: column;
-    padding: 6rem;
+    padding: 6rem 0;
     padding-bottom: 0rem;
+
+    text-align: center;
+  }
+
+  .hero--text-box p {
+    text-align: justify;
+    padding: 0 3rem;
+  }
+
+  .hero--btns {
+    gap: 0;
+    padding: 2rem;
   }
 
   .hero::after {
@@ -94,6 +136,10 @@
     width: 100%;
   }
 
+  .portfolio__top {
+    gap: 2rem;
+  }
+
   .portfolio__top button {
     padding: 1rem 2rem;
   }
@@ -111,54 +157,67 @@
     width: auto;
   }
 
-  .testimonials {
+  .section__testimonials {
     padding: 0;
-    flex-direction: column;
-
-    gap: 2rem;
   }
 
-  .testimonial__bottom::after {
+  .testimonial {
+    padding: 0;
+
+    width: 75%;
+  }
+
+  .testimonial p {
+    font-size: 1.4rem;
+  }
+
+  .slider__btn {
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 2rem;
+  }
+
+  .dots {
+    bottom: 0;
+  }
+
+  .chi-sono::after {
     width: auto;
   }
 
-  .testimonial__bottom::before {
+  .chi-sono::before {
     width: 100%;
     height: 50%;
   }
 
-  .testimonial__bottom {
+  .chi-sono {
     margin-top: 0;
     flex-direction: column;
     align-items: center;
   }
-  .testimonial__img-box {
+
+  .chi-sono__container {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chi-sono__img-box {
     display: flex;
     justify-content: center;
   }
 
-  .testimonial__img-box img {
+  .chi-sono__img-box img {
     display: block;
     width: 50%;
   }
 
-  .testimonial__cta-box::before {
+  .chi-sono__cta-box::before {
     width: 0;
   }
 
-  .testimonial__cta-box {
+  .chi-sono__cta-box {
     width: 100%;
-  }
-
-  .section__blog h1 {
-    text-align: center;
-  }
-
-  .container__blog {
-    display: flex;
-    flex-direction: column;
-
-    gap: 2rem;
   }
 
   .section__connect::before {
@@ -170,34 +229,16 @@
     top: 15%;
   }
 
-  .connect--top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .partners--container h1 {
+    text-align: center;
+  }
 
+  .partners__gallery {
     flex-direction: column;
   }
 
-  .connect-top__img-box {
-    display: flex;
-    justify-content: center;
-  }
-
-  .connect-top__img-box img {
-    width: 75%;
-  }
-
-  .connect-top__text-box {
-    width: 100%;
-  }
-
-  .connect__gallery {
-    display: flex;
-    flex-direction: column;
-
-    gap: 2rem;
-
-    padding: 0 4rem;
+  .partners__gallery--element {
+    width: 50%;
   }
 
   .footer {
@@ -216,8 +257,24 @@
     gap: 1rem;
   }
 
+  /* CONTATTI PAGE */
+
   .contatti--section {
+    padding: 0;
     text-align: center;
+  }
+
+  .contatti--container {
+    flex-direction: column-reverse;
+  }
+
+  .contatti--img-box {
+    width: 100%;
+  }
+
+  .contatti--img-box img {
+    width: 100%;
+    display: block;
   }
 
   .form-group {
@@ -228,5 +285,49 @@
   .contatti__social {
     flex-direction: column;
     align-items: center;
+  }
+
+  /* SERVIZI PAGE */
+
+  .servizi--section {
+    padding: 0;
+  }
+
+  .servizi--container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    padding: 1rem;
+    gap: 2rem;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .servizi--text-box {
+    padding: 0;
+    text-align: justify;
+    flex-direction: column;
+  }
+
+  .servizi--text-box h1 {
+    text-align: center;
+  }
+
+  .servizi--container .servizi--text-box {
+    padding: 1rem;
+
+    flex: 1;
+  }
+
+  .card--container {
+    flex-direction: column;
+
+    gap: 2rem;
+
+    padding: 3rem 6rem;
   }
 }
