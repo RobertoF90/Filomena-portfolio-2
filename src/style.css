@@ -17,8 +17,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "League Spartan";
+  font-size: 2rem;
+  font-family: 'League Spartan';
 }
 
 .mobile {
@@ -34,7 +34,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Lora";
+  font-family: 'Lora';
   letter-spacing: 1px;
 }
 
@@ -45,7 +45,7 @@ h5 {
 .heading--primary {
   padding-top: 0.8rem;
   padding-bottom: 2.4rem;
-  font-size: 4.2rem;
+  font-size: 5.2rem;
   line-height: 1;
 }
 
@@ -145,7 +145,7 @@ header {
 }
 
 header::before {
-  content: "";
+  content: '';
   width: 50%;
   height: 100%;
   position: absolute;
@@ -164,13 +164,13 @@ header::before {
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 2rem;
+  padding: 2rem 4rem;
 
   height: 10vh;
 }
 
 .nav__name {
-  font-size: 4.2rem;
+  font-size: 7.2rem;
 
   color: var(--primary);
 }
@@ -182,7 +182,7 @@ header::before {
   align-items: center;
   gap: 3rem;
 
-  font-size: 2rem;
+  font-size: 3.2rem;
 
   text-transform: uppercase;
 
@@ -228,7 +228,7 @@ header::before {
 }
 
 .hero--img-box::after {
-  content: "";
+  content: '';
   width: 12.5rem;
   height: 12.5rem;
   position: absolute;
@@ -241,7 +241,7 @@ header::before {
 }
 
 .hero::after {
-  content: "";
+  content: '';
   width: 5%;
   height: 40%;
   position: absolute;
@@ -263,11 +263,11 @@ header::before {
   flex: 50%;
   display: flex;
   flex-direction: column;
-  padding: 6rem 12rem;
+  padding: 0 5%;
 }
 
 .hero--name {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   color: #333;
 }
 
@@ -293,7 +293,7 @@ header::before {
 }
 
 .section__services::after {
-  content: "";
+  content: '';
   width: 5%;
   height: 40%;
   position: absolute;
@@ -365,7 +365,7 @@ header::before {
 
 .why__links--item {
   display: block;
-  font-family: "Abril Fatface";
+  font-family: 'Abril Fatface';
 
   text-decoration: none;
   font-size: 2rem;
@@ -393,7 +393,7 @@ header::before {
 }
 
 .section__why--img-box::before {
-  content: "";
+  content: '';
   width: 85%;
   height: 75%;
   position: absolute;
@@ -407,7 +407,7 @@ header::before {
 }
 
 .section__why--img-box::after {
-  content: "";
+  content: '';
   width: 15%;
   height: 17%;
   position: absolute;
@@ -491,7 +491,7 @@ header::before {
 }
 
 .chi-sono__container::before {
-  content: "";
+  content: '';
   width: 50%;
   height: 75%;
   position: absolute;
@@ -504,7 +504,7 @@ header::before {
 }
 
 .chi-sono__container::after {
-  content: "";
+  content: '';
   width: 50%;
   height: 75%;
   position: absolute;
@@ -515,7 +515,7 @@ header::before {
 }
 
 .chi-sono__cta-box::before {
-  content: "";
+  content: '';
   width: 12.5rem;
   height: 12.5rem;
   position: absolute;
@@ -567,7 +567,7 @@ header::before {
 }
 
 .section__partners::before {
-  content: "";
+  content: '';
   width: 5%;
   height: 75%;
   position: absolute;
@@ -581,7 +581,7 @@ header::before {
 }
 
 .section__partners::after {
-  content: "";
+  content: '';
   width: 5%;
   height: 75%;
   position: absolute;
@@ -741,7 +741,7 @@ header::before {
 /* CONTATTI PAGE */
 
 .contatti--img-box::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -878,7 +878,7 @@ header::before {
 }
 
 .servizi--container::before {
-  content: "";
+  content: '';
   height: 100%;
   width: inherit;
 
@@ -908,7 +908,7 @@ header::before {
 }
 
 .card--container:before {
-  content: "";
+  content: '';
   width: 5%;
   height: 50%;
   position: absolute;
@@ -922,7 +922,7 @@ header::before {
 }
 
 .card--container::after {
-  content: "";
+  content: '';
   width: 5%;
   height: 50%;
   position: absolute;
